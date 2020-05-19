@@ -1,0 +1,20 @@
+{
+    "name": "AutoCore.Sim.Autoware.IO",
+    "references": [
+        "AutoCore.Sim.Sensor",
+        "AutoCore.Sim.Vehicle.Control",
+        "Unity.Mathematics",
+        "Unity.Burst",
+        "Unity.Collections",
+        "Unity.Jobs"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

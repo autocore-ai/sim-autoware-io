@@ -1,0 +1,10 @@
+{
+  "name": "com.autocore.sim-autoware-io",
+  "version": "0.1.0",
+  "displayName": "Sim Autoware IO",
+  "unity": "2019.3",
+  "type": "library",
+  "dependencies": {
+    "com.autocore.sim-vehicle-control": "0.1.0"
+  }
+}
