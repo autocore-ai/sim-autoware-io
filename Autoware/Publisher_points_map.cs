@@ -23,7 +23,11 @@ namespace AutoCore.Sim.Autoware.IO
 {
     public class Publisher_points_map : ExternRosNode
     {
-        const string exeName = "points_map_loader.exe";
+#if UNITY_EDITOR_WIN || UNITY_STANDALONE_WIN
+        const string exeName = "pointcloud_map_loader.exe";
+#elif UNITY_EDITOR_LINUX || UNITY_STANDALONE_LINUX
+        const string exeName = "pointcloud_map_loader";
+#endif
         public string path = "";
         private void Awake()
         {

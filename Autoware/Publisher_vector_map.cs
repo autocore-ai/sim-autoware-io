@@ -23,7 +23,11 @@ namespace AutoCore.Sim.Autoware.IO
 {
     public class Publisher_vector_map : ExternRosNode
     {
+#if UNITY_EDITOR_WIN || UNITY_STANDALONE_WIN
         const string exeName = "vector_map_loader.exe";
+#elif UNITY_EDITOR_LINUX || UNITY_STANDALONE_LINUX
+        const string exeName = "vector_map_loader";
+#endif
         public string path = "";
         private void Awake()
         {
